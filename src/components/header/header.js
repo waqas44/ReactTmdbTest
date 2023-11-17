@@ -1,6 +1,7 @@
 import React from 'react';
 
 import CardContainer from '../cardcontainer/cardcontainer';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -17,9 +18,11 @@ const Header = () => {
           <h4 className='text-2xl font-normal text-white'>
             Discover and explore a vast collection of movies.
           </h4>
-          <button className='text-black mt-10 bg-white rounded-md w-32 py-2 hover:bg-gray-200'>
-            Browse Movies
-          </button>
+          <Link to='/movie'>
+            <button className='text-black mt-10 bg-white rounded-md w-32 py-2 hover:bg-gray-200'>
+              Browse Movies
+            </button>
+          </Link>
         </div>
       </div>
       <CardContainer />
