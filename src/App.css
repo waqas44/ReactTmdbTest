@@ -27,5 +27,9 @@ body {
 }
 
 .nav-border {
-  border-bottom: 1px solid #202020;
+  border-bottom: 1.8px solid #202020;
+}
+
+.footer-border {
+  border-top: 1.8px solid #202020;
 }

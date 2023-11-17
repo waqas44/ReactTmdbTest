@@ -7,10 +7,11 @@ import Header from './components/header/header';
 import Movies from './components/movies/movies';
 import MyList from './components/mylist/mylist';
 import About from './components/about/about';
+import Footer from './components/footer/footer';
 
 const App = () => {
   return (
-    <div>
+    <>
       <div className='App'>
         <Navbar />
         <Routes>
@@ -19,9 +20,9 @@ const App = () => {
           <Route path='/my-list' element={<MyList />} />
           <Route path='/about' element={<About />} />
         </Routes>
+        <Footer />
       </div>
-      ;
-    </div>
+    </>
   );
 };
 
