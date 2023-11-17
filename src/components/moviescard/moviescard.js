@@ -1,14 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-const MoviesCard = ({ data }) => {
-  const baseurl = 'https://image.tmdb.org/t/p/w500/';
-  const handleMoviesDetails = (id) => {
-    console.log(id);
+
+import options from '../../components/api/api';
+
+const baseurl = 'https://image.tmdb.org/t/p/w500/';
+
+const MoviesCard = ({ data, liftMoviesDetails }) => {
+  const handleMoviesDetails = async (id) => {
+    const res = await fetch(
+      `https://api.themoviedb.org/3/movie/${id}`,
+      options
+    );
+    const data = await res.json();
+    liftMoviesDetails(data);
   };
 
   return (
     <>
-      <Link onClick={() => handleMoviesDetails(data.id)}>
+      <Link onClick={() => handleMoviesDetails(data.id)} to='/movie-detail'>
         <div className='text-white gap-8'>
           <div>
             <div className='w-60 h-96 rounded-xl '>
