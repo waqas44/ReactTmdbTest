@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 
 import './App.css';
 import Navbar from './components/navbar/navbar';
@@ -7,7 +8,7 @@ import Header from './components/header/header';
 import Movies from './components/movies/movies';
 import MyList from './components/mylist/mylist';
 import About from './components/about/about';
-// import Footer from './components/footer/footer';
+import Footer from './components/footer/footer';
 
 const App = () => {
   return (
@@ -20,7 +21,7 @@ const App = () => {
           <Route path='/my-list' element={<MyList />} />
           <Route path='/about' element={<About />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );
