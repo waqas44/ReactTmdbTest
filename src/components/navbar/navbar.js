@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Search from '../search/Search';
+import Search from '../search/search';
 
 const Navabr = () => {
   return (
     <>
-      <div className='justify-between nav-border flex items-center '>
+      <div className='justify-between nav-border flex items-center mb-2'>
         <div className='ml-20 font-display hidden md:flex p-3'>
           <Link href='/' className='mr-6 flex items-center space-x-2'>
             <div className='flex flex-row flex-nowrap items-center gap-2 md:-ml-12'>
