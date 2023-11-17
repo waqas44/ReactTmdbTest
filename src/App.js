@@ -9,6 +9,7 @@ import Movies from './components/movies/movies';
 import MyList from './components/mylist/mylist';
 import About from './components/about/about';
 import Footer from './components/footer/footer';
+// import Search from './components/search/search';
 
 const App = () => {
   return (

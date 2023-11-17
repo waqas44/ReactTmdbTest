@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../card/card';
-import { options } from '../api/api';
+import options from '../api/api';
 
 const CardContainer = () => {
   const [nowPlaying, setNowPlaying] = useState([]);
