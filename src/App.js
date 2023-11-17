@@ -9,7 +9,7 @@ import Movies from './components/movies/movies';
 import MyList from './components/mylist/mylist';
 import About from './components/about/about';
 import Footer from './components/footer/footer';
-// import Search from './components/search/search';
+import Search from './components/search/search';
 
 const App = () => {
   return (
@@ -21,6 +21,7 @@ const App = () => {
           <Route path='/movie' element={<Movies />} />
           <Route path='/my-list' element={<MyList />} />
           <Route path='/about' element={<About />} />
+          <Route path='/search' element={<Search />} />
         </Routes>
         <Footer />
       </div>

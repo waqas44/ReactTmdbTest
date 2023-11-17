@@ -2,9 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 const MoviesCard = ({ data }) => {
   const baseurl = 'https://image.tmdb.org/t/p/w500/';
+  const handleMoviesDetails = (id) => {
+    console.log(id);
+  };
+
   return (
     <>
-      <Link>
+      <Link onClick={() => handleMoviesDetails(data.id)}>
         <div className='text-white gap-8'>
           <div>
             <div className='w-60 h-96 rounded-xl '>
