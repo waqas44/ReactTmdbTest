@@ -12,10 +12,21 @@
 }
 
 body {
-  background: #f8efef;
-  border: 0.1px solid #ccc;
+  background: #09080d;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #09080d;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1d283a;
+  border-radius: 1rem;
+}
 .search-bar input {
   width: 200px;
   height: 40px;
