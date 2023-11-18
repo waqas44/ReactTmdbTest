@@ -4,9 +4,16 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import options from '../api/api';
 
+import { useDispatch } from 'react-redux';
+import { addList } from '../ReduxToolkit/ListSlice';
+
 const MovieDetails = ({ moviesDetails }) => {
   const [youtubeVideo, setYoutubeVideo] = useState([]);
   const [movieCast, setMovieCast] = useState([]);
+
+  // const [myList, setMyList] = useState([]);
+
+  const dispatch = useDispatch();
 
   const baseurl_backdrop =
     'https://image.tmdb.org/t/p/w1920_and_h800_multi_faces/';
@@ -44,6 +51,16 @@ const MovieDetails = ({ moviesDetails }) => {
   // const castList = movieCast?.cast.slice(0, 12);
 
   // console.log(castList);
+
+  // console.log(movieCast);
+  // console.log(youtubeVideo);
+
+  const handleAddToFav = () => {
+    dispatch(addList(moviesDetails));
+    // setMyList([...myList, moviesDetails]);
+  };
+
+  // console.log(myList);
 
   return (
     <>
@@ -119,7 +136,10 @@ const MovieDetails = ({ moviesDetails }) => {
                   IMDB
                 </Link>
               </div>
-              <button className='text-gray-900 font-normal text-base px-8 py-2 bg-white hover:bg-gray-300 rounded-lg'>
+              <button
+                className='text-gray-900 font-normal text-base px-8 py-2 bg-white hover:bg-gray-300 rounded-lg'
+                onClick={handleAddToFav}
+              >
                 Add to Favorite
               </button>
             </div>
