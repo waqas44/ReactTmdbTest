@@ -5,7 +5,7 @@ import 'react-circular-progressbar/dist/styles.css';
 import options from '../api/api';
 
 import { useDispatch } from 'react-redux';
-import { addList } from '../ReduxToolkit/ListSlice';
+import { addList } from '../reduxtoolkit/listslice';
 
 const MovieDetails = ({ moviesDetails }) => {
   const [youtubeVideo, setYoutubeVideo] = useState([]);

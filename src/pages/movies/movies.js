@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import MoviesCard from '../moviescard/moviescard';
-import options from '../../components/api/api';
+import { options } from '../../components/api/api';
 
 const Movies = ({ liftMoviesDetails }) => {
   const [allMovies, setAllMovies] = useState([]);

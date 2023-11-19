@@ -5,9 +5,9 @@ import './App.css';
 import Navbar from './components/navbar/navbar';
 import Header from './components/header/header';
 
-import Movies from './components/movies/movies';
-import MyList from './components/mylist/mylist';
-import About from './components/about/about';
+import Movies from './pages/movies/movies';
+import MyList from './pages/mylist/mylist';
+import About from './pages/about/about';
 import Footer from './components/footer/footer';
 import Search from './components/search/search';
 import MovieDetails from './components/moviedetails/moviedetails';
