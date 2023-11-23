@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-import options from './Api';
+import { options } from './Api';
 
 import { useDispatch } from 'react-redux';
 import { addList } from './Listslice';

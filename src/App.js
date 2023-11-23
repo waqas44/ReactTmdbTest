@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 import './App.css';
-import Navbar from './components/navbar/navbar';
-import Header from './components/header/header';
+import Navbar from './Components/navbar/navbar';
+import Header from './Components/header/header';
 
-import Movies from './pages/movies/movies';
-import MyList from './pages/mylist/mylist';
-import About from './pages/about/about';
-import Footer from './components/footer/footer';
-import Search from './components/search/search';
-import MovieDetails from './components/moviedetails/moviedetails';
+import Movies from './Pages/movies/movies';
+import MyList from './Pages/mylist/mylist';
+import About from './Pages/about/about';
+import Footer from './Components/footer/footer';
+import Search from './Components/search/search';
+import MovieDetails from './Components/moviedetails/moviedetails';
 
 const App = () => {
   const [moviesDetails, setMoviesDetails] = useState([]);
