@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-import options from '../api/api';
+import options from './Api';
 
 import { useDispatch } from 'react-redux';
-import { addList } from '../reduxtoolkit/listslice';
+import { addList } from './Listslice';
 
 const MovieDetails = ({ moviesDetails }) => {
   const [youtubeVideo, setYoutubeVideo] = useState([]);

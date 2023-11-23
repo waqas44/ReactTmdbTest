@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { RemoveList } from '../reduxtoolkit/listslice';
+import { RemoveList } from './Listslice';
 
 const MyListMovies = ({ data }) => {
   const dispatch = useDispatch();

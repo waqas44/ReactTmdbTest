@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import MyListMovies from '../../components/mylistmovies/mylistmovies';
+import MyListMovies from '../components/Mylistmovies';
 import { useSelector, useDispatch } from 'react-redux';
-import { getList, clearList } from '../../components/reduxtoolkit/listslice';
+import { getList, clearList } from '../components/Listslice';
 
 const MyList = () => {
   const list = useSelector((state) => state.ListSlice.list);
