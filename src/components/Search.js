@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import options from '../api/api';
-import SearchBarCard from '../searchbarcard/searchbarcard';
+import { options } from './Api';
+import SearchBarCard from './Searchbarcard';
 
 const APIKEY = '0e878adce585c9f967e29b947b785ab9';
 

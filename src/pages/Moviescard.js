@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import options from './Components/Api';
+import { options } from '../Components/Api';
 
 const baseurl = 'https://image.tmdb.org/t/p/w500/';
 
