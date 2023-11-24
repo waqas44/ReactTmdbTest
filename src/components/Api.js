@@ -3,6 +3,6 @@ export const options = {
   headers: {
     accept: 'application/json',
     Authorization:
-      'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwZTg3OGFkY2U1ODVjOWY5NjdlMjliOTQ3Yjc4NWFiOSIsInN1YiI6IjY0ODVhMjY1YmYzMWYyNTA1ODgxZTIxOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.KQOVcIIvhDG5B8hsZmbXD50G6bG8gWMhK-0o-jLNYNo',
+      'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1YTdjNjRmNzM0MTJlYzY5ZTI3NWFlYmY3MDQ1NTIxOCIsInN1YiI6IjY1NTc1ZGNlYjU0MDAyMTRjZjM5MzQxZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.6IDrD4X6ZxOfeG6u4ip5AHEY0L4B-sB7Owai1P80OPQ',
   },
 };
