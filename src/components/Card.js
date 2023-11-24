@@ -4,7 +4,8 @@ const Card = ({ data }) => {
   const baseURL = 'https://image.tmdb.org/t/p/w500/';
   return (
     <>
-      <Link to='/movie/`${id}`'>
+      {/* <Link to='/movie/`${id}`'> */}
+      <Link to={`'${baseURL}'`}>
         <div className='mt-8 text-white gap-8 '>
           <div>
             <div className='w-60 h-96 rounded-xl '>

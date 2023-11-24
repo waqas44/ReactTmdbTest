@@ -134,7 +134,7 @@ const Movies = ({ liftMoviesDetails }) => {
             <div className=' w-72 px-5 '>
               <div className='space-y-1  overflow-y-auto h-80 '>
                 {genres.map((genre, index) => (
-                  <Link key={index} to={`/movie?genre=${genre.id}`}>
+                  <Link key={index} to={`/movies?genre=${genre.id}`}>
                     <div
                       className='flex text-gray-200 mb-3 hover:text-white rounded-lg hover:bg-gray-900 transition-all py-1 '
                       onClick={() => handleGenre(genre.id)}
